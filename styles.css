@@ -40,11 +40,11 @@ body {
 .main {
   max-width: 75vw;
   max-height: 100vh;
+  background-color: #d8d7d7;
 }
 
 .main > .header {
   height: 35vh;
-  background-color: #d8d7d7;
 }
 
 .main > .header > .text {
@@ -59,3 +59,22 @@ body {
   font-size: calc(2vh + 12px);
 }
 
+form > .details {
+  background-color: #fff;
+  margin-left: 50px;
+}
+
+.name, .emailNumber, .password {
+  display: flex;
+  gap: 4vw;
+}
+
+.name > .firstName,
+.name > .lastName,
+.emailNumber > .email,
+.emailNumber > .number,
+.password > .pw,
+.password > .confirmpw {
+  display: flex;
+  flex-direction: column;
+}
