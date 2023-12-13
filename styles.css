@@ -45,6 +45,7 @@ body {
 
 .main > .header {
   height: 35vh;
+  overflow: hidden;
 }
 
 .main > .header > .text {
@@ -52,29 +53,81 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   position: relative;
-  top: 40%;
-  bottom: 10%;
-  margin-right: 15%;
-  margin-left: 5%;
-  font-size: calc(2vh + 12px);
+  top: 15vh;
+  bottom: 5vh;
+  margin-right: 15vw;
+  margin-left: 2%;
+  font-size: calc(2vh + 6px);
 }
 
-form > .details {
+.main > .form {
+  height: 65vh;
+}
+
+form > .positioning {
   background-color: #fff;
-  margin-left: 50px;
+  height: 50%;
+  box-shadow: 0 5px 10px rgb(124, 124, 124) ;
 }
 
-.name, .emailNumber, .password {
+.details {
+ padding: 1% 0 1% 2%;
+}
+
+form > div > div > div {
   display: flex;
   gap: 4vw;
 }
 
-.name > .firstName,
-.name > .lastName,
-.emailNumber > .email,
-.emailNumber > .number,
-.password > .pw,
-.password > .confirmpw {
+label {
   display: flex;
-  flex-direction: column;
+}
+
+form > div > div > div,
+form > div > div > h1 {
+  margin-bottom: 2vh;
+}
+
+input {
+  height: 1.8rem;
+  width: 14vw;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #b4b0b0;
+  padding-left: 0.3vw;
+  outline: none;
+}
+
+label {
+  font-size: calc(1vh + 10px);
+}
+
+.btn {
+  padding: 1.5% 0 1% 2%;
+}
+
+.btn > button{
+  margin-bottom: 2vh;
+  text-align: center;
+  padding: 1vh 2vw;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  background-color: #165722;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 5px 5px 10px rgb(158, 158, 158);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #165722;
+  font-weight: 600;
+}
+
+input:focus{
+  border: 2px solid #8211ce;
+  box-shadow: 5px 5px 8px rgb(158, 157, 157);
 }
