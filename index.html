@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
@@ -27,15 +28,16 @@
       <form action="" method="post">
         <div class="positioning">
           <div class="details">
+            <p>Required fields are marked with a *</p>
             <h1>Let's do this!</h1>
             <div class="name">
               <div class="firstName">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName">
+                <label for="firstName">First Name*</label>
+                <input type="text" name="firstName" id="firstName" required>
               </div>
               <div class="lastName">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName">
+                <label for="lastName">Last Name*</label>
+                <input type="text" name="lastName" id="lastName" required>
               </div>
             </div>
             <div class="emailNumber">
@@ -50,12 +52,13 @@
             </div>
             <div class="password">
               <div class="pw">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" pattern="[a-zA-Z]{5,}" title="Your password must have at least 5 letters" minlength="5">
+                <label for="password">Password*</label>
+                <input type="password" name="password" id="password" pattern="[a-zA-Z]{5,}" title="Your password must have at least 5 letters" minlength="5" required>
               </div>
               <div class="confirmpw">
-                <label for="confirmPw">Confirm Password</label>
-                <input type="password" name="confirmPw" id="confirmPw" pattern="[a-zA-Z]{5,}" title="Your password must have at least 5 letters" minlength="5">
+                <label for="confirmPw">Confirm Password*</label>
+                <input type="password" name="confirmPw" id="confirmPw" pattern="[a-zA-Z]{5,}" title="Your password must have at least 5 letters" minlength="5" required>
+                <p class="pwCheck"></p>
               </div>
             </div>
           </div>

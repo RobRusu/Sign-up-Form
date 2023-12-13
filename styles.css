@@ -131,3 +131,19 @@ input:focus{
   border: 2px solid #8211ce;
   box-shadow: 5px 5px 8px rgb(158, 157, 157);
 }
+
+.confirmpw {
+  position: relative;
+}
+
+.pwCheck {
+  font-size: 0.8rem;
+  color: red;
+  font-weight: 500;
+  position: absolute;
+  top: 4.8vh;
+}
+
+input:required:invalid {
+  border: 2px solid red;
+}
