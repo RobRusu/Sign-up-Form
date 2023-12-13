@@ -4,7 +4,7 @@ const check = document.querySelector('.pwCheck');
 
 function pwCheck (){
   if (pw.value !== confirmpw.value){
-    check.textContent = '*Passwords do not match';
+    check.textContent = 'Passwords do not match';
   } else {
     check.textContent = '';
   }

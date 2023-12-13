@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: norse;
+  src: url(/Norse-Bold.otf);
+}
+
+:root {
+  --font-text: norse, 'Nova Square', sans-serif;
+}
+
 body {
   display: flex;
-  font-family: 'Nova Square', sans-serif;
+  font-family: var(--font-text);
 }
 
 .sideBar {
@@ -16,7 +25,7 @@ body {
   color: #fff;
   height: 100vh;
   max-width: 25vw;
-  background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-image: url(/img/odin-crow.png);
   background-size: cover;
 }
 
@@ -28,19 +37,18 @@ body {
   background-color: rgba(32, 32, 32, 0.6);
   height: 15vh;
   width: 100%;
-  font-size: calc(4vh + 20px);
+  font-size: calc(6vh + 20px);
   position: relative;
-  top: 20vh;
-  font-family: 'Nova Square', sans-serif;
+  top: 40vh;
 }
 .sideBar > .logo > img {
   height: 80%;
 }
 
 .main {
-  max-width: 75vw;
+  width: 75vw;
   max-height: 100vh;
-  background-color: #d8d7d7;
+  background-color: rgb(205, 205, 228);
 }
 
 .main > .header {
@@ -84,7 +92,7 @@ label {
 }
 
 form > div > div > div,
-form > div > div > h1 {
+form > div > div > h2 {
   margin-bottom: 2vh;
 }
 
@@ -96,6 +104,7 @@ input {
   border: 1px solid #b4b0b0;
   padding-left: 0.3vw;
   outline: none;
+  font-family: var(--font-text);
 }
 
 label {
@@ -115,10 +124,11 @@ label {
   color: #fff;
   background-color: #165722;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: inherit;
   box-shadow: 5px 5px 10px rgb(158, 158, 158);
   cursor: pointer;
+  word-spacing: 0.3rem;
 }
 
 a {
@@ -137,7 +147,7 @@ input:focus{
 }
 
 .pwCheck {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: red;
   font-weight: 500;
   position: absolute;
@@ -146,4 +156,8 @@ input:focus{
 
 input:required:invalid {
   border: 2px solid red;
+}
+
+.notice, .login {
+  font-size: 1.3rem;
 }
