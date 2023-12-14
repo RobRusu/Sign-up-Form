@@ -161,3 +161,14 @@ input:required:invalid {
 .notice, .login {
   font-size: 1.3rem;
 }
+
+.artist {
+ position: absolute;
+ bottom: 2vh;
+ left: 7vw;
+ font-size: calc(2vh + 6px);
+}
+
+div > p > a {
+  color: black;
+}
