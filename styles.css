@@ -25,7 +25,7 @@ body {
   color: #fff;
   height: 100vh;
   max-width: 25vw;
-  background-image: url(/img/odin-crow.png);
+  background-image: url(img/odin-crow.png);
   background-size: cover;
 }
 
