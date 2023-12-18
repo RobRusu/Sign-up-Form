@@ -131,7 +131,7 @@ label {
   word-spacing: 0.3rem;
 }
 
-a {
+.login > a {
   text-decoration: none;
   color: #165722;
   font-weight: 600;
@@ -165,10 +165,12 @@ input:required:invalid {
 .artist {
  position: absolute;
  bottom: 2vh;
- left: 7vw;
- font-size: calc(2vh + 6px);
+ left: 5vw;
+ font-size: calc(1vh + 6px);
 }
 
 div > p > a {
-  color: black;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
